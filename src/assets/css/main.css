@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+  }
+  
+  /* 顶部导航栏 */
+  .el-header {
+    background-color: #b3c0d1;
+    color: #333;
+    line-height: 60px;
+  }
+  
+  /* 轮播图 */
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
+  }
+  
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n + 1) {
+    background-color: #d3dce6;
+  }
+  
+  /* 正文部分 */
+  /* 左侧边栏 */
+  .el-aside {
+    color: #333;
+  }
+  
+  .left{
+    background-color: blanchedalmond;
+  }
+  
+  /* 右侧边栏 */
+  
+  /* 中间 */
+  
+  /* 回到顶部 */
+  
+  /* 底部 */
+  .el-footer {
+    background-color: #b3c0d1;
+    padding: 0;
+  }
