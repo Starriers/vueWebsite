@@ -9,7 +9,7 @@
         <div class="sign">
           <a href class="sign-in">登录</a>
           <a href class="sign-up">注册</a>
-          <a href class="write">写文章</a>
+          <a href class="write el-icon-edit">写文章</a>
         </div>
         <!-- 中间 导航栏 -->
         <div class="nav clearfixed">
@@ -33,7 +33,7 @@
     <!-- 正文部分 -->
     <el-container class="wrapper">
       <!-- 左侧边栏 -->
-      <el-aside class="left"></el-aside>
+      <!-- <el-aside class="left"></el-aside> -->
 
       <!-- 内容部分 -->
       <el-main class="main">
@@ -48,8 +48,7 @@
         <div class="left-option">
           <h5>为你推荐</h5>
         </div>
-        <!-- 分割线 -->
-        <!-- <div class="line"></div> -->
+
         <!-- 文章列表 -->
         <div class="list-container">
           <div class="list-item mt15">
@@ -71,8 +70,12 @@
                 </a>
                 <div class="list-meta">
                   <a href>Sunnier</a>
-                  <a href>回复</a>
-                  <span>喜欢</span>
+                  <a href>
+                    <i class="el-icon-edit-outline"></i>11
+                  </a>
+                  <span>
+                    <i class="el-icon-star-on"></i>26
+                  </span>
                 </div>
               </div>
             </div>
@@ -96,8 +99,12 @@
                 </a>
                 <div class="list-meta">
                   <a href>Sunnier</a>
-                  <a href>回复</a>
-                  <span>喜欢</span>
+                  <a href>
+                    <i class="el-icon-edit-outline"></i>11
+                  </a>
+                  <span>
+                    <i class="el-icon-star-on"></i>26
+                  </span>
                 </div>
               </div>
             </div>
@@ -121,8 +128,12 @@
                 </a>
                 <div class="list-meta">
                   <a href>Sunnier</a>
-                  <a href>回复</a>
-                  <span>喜欢</span>
+                  <a href>
+                    <i class="el-icon-edit-outline"></i>11
+                  </a>
+                  <span>
+                    <i class="el-icon-star-on"></i>26
+                  </span>
                 </div>
               </div>
             </div>
@@ -134,7 +145,42 @@
       </el-main>
 
       <!-- 右侧边栏 -->
-      <el-aside class="right"></el-aside>
+      <el-aside class="right">
+        <!-- 推荐作者 -->
+        <div class="recommended-authors">
+          <div class="ra-title">
+            <span>推荐作者</span>
+            <a href class="change el-icon-refresh">换一批</a>
+          </div>
+          <ul class="list">
+            <li class="mt15">
+              <a href class="avatar">
+                <!-- <img src="" alt> -->
+              </a>
+              <a href class="follow el-icon-plus">关注</a>
+              <a href class="name">Sunnier</a>
+            </li>
+            <li class="mt15">
+              <a href class="avatar">
+                <!-- <img src="" alt> -->
+              </a>
+              <a href class="follow el-icon-plus">关注</a>
+              <a href class="name">Sunnier</a>
+            </li>
+            <li class="mt15">
+              <a href class="avatar">
+                <!-- <img src="" alt> -->
+              </a>
+              <a href class="follow el-icon-plus">关注</a>
+              <a href class="name">Sunnier</a>
+            </li>
+          </ul>
+          <a href class="find-more">
+            查看全部
+            <i class="el-icon-arrow-right"></i>
+          </a>
+        </div>
+      </el-aside>
     </el-container>
 
     <!-- 回到顶部 -->
@@ -143,7 +189,8 @@
         <i class="el-icon-caret-top"></i>
       </a>
     </div>
-
+    <!-- 分割线 -->
+    <!-- <div class="line"></div> -->
     <!-- 底部 -->
     <el-footer>
       <div class="copyright">Copyright © 2019 当前呈现版本</div>
@@ -161,9 +208,9 @@
 }
 
 /* 左侧边栏 */
-.left {
+/* .left {
   width: 16.66667% !important;
-}
+} */
 /* 文章列表 */
 .el-main {
   padding: 15px 5px 0 5px;
@@ -190,11 +237,11 @@
 }
 /* 右侧边栏 */
 .right {
-  width: 25% !important;
+  width: 29.16667% !important;
 }
 /* 底部 */
 .el-footer {
-  background-color: #b3c0d1;
+  background-color: #f5f5f7;
   padding: 0;
 }
 </style>
