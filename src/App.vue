@@ -33,44 +33,7 @@
     <!-- 正文部分 -->
     <el-container class="wrapper">
       <!-- 左侧边栏 -->
-      <el-aside class="left">
-        <el-menu :default-openeds="['1', '3']">
-          <el-submenu index="1">
-            <template slot="title">
-              <i class="el-icon-message"></i>导航一
-            </template>
-            <el-menu-item-group>
-              <template slot="title">分组一</template>
-              <el-menu-item index="1-1">选项1</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group title="分组2">
-              <el-menu-item index="1-3">选项3</el-menu-item>
-            </el-menu-item-group>
-            <el-submenu index="1-4">
-              <template slot="title">选项4</template>
-              <el-menu-item index="1-4-1">选项4-1</el-menu-item>
-            </el-submenu>
-          </el-submenu>
-          <el-submenu index="2">
-            <template slot="title">
-              <i class="el-icon-menu"></i>导航二
-            </template>
-            <el-menu-item-group>
-              <template slot="title">分组一</template>
-              <el-menu-item index="2-1">选项1</el-menu-item>
-              <el-menu-item index="2-2">选项2</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group title="分组2">
-              <el-menu-item index="2-3">选项3</el-menu-item>
-            </el-menu-item-group>
-            <el-submenu index="2-4">
-              <template slot="title">选项4</template>
-              <el-menu-item index="2-4-1">选项4-1</el-menu-item>
-            </el-submenu>
-          </el-submenu>
-        </el-menu>
-      </el-aside>
+      <el-aside class="left"></el-aside>
 
       <!-- 内容部分 -->
       <el-main class="main">
@@ -82,56 +45,96 @@
             </h3>
           </el-carousel-item>
         </el-carousel>
+        <div class="left-option">
+          <h5>为你推荐</h5>
+        </div>
         <!-- 分割线 -->
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
         <!-- 文章列表 -->
-        <div class="list"></div>
-        <el-table :data="tableData">
-          <el-table-column prop="date" label="日期" width="140"></el-table-column>
-          <el-table-column prop="name" label="姓名" width="120"></el-table-column>
-          <el-table-column prop="address" label="地址"></el-table-column>
-        </el-table>
+        <div class="list-container">
+          <div class="list-item mt15">
+            <div class="list-item-info clearfixed">
+              <a href class="list-img">
+                <img src="./assets/img/up.jpg" alt>
+              </a>
+              <div class="list-content">
+                <a href target="_blank">
+                  <div class="list-title">《尼采的十句话》</div>
+                  <p class="list-abstract">
+                    ——1—— 每一个不曾起舞的日子，都是对生命的辜负。
+                    ——2—— 其实人跟树是一样的，越是向往高处的阳光，它的根就越要伸向黑暗的地底。
+                    ——3—— 我感到难过，不是因为你欺骗了我，而是因为我再也不能相信你了。
+                    ——4—— 一个人知道自己为什么而活，就可以忍受任何一种生活。
+                    ——5—— 但凡不能杀死你的，最终都会使你更强大。
+                    ——6—— 谁终将声震人间，必长久深自缄默；谁终将点燃闪电，必长久如云漂泊。
+                  </p>
+                </a>
+                <div class="list-meta">
+                  <a href>Sunnier</a>
+                  <a href>回复</a>
+                  <span>喜欢</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item mt15">
+            <div class="list-item-info clearfixed">
+              <a href class="list-img">
+                <img src="./assets/img/up.jpg" alt>
+              </a>
+              <div class="list-content">
+                <a href target="_blank">
+                  <div class="list-title">《尼采的十句话》</div>
+                  <p class="list-abstract">
+                    ——1—— 每一个不曾起舞的日子，都是对生命的辜负。
+                    ——2—— 其实人跟树是一样的，越是向往高处的阳光，它的根就越要伸向黑暗的地底。
+                    ——3—— 我感到难过，不是因为你欺骗了我，而是因为我再也不能相信你了。
+                    ——4—— 一个人知道自己为什么而活，就可以忍受任何一种生活。
+                    ——5—— 但凡不能杀死你的，最终都会使你更强大。
+                    ——6—— 谁终将声震人间，必长久深自缄默；谁终将点燃闪电，必长久如云漂泊。
+                  </p>
+                </a>
+                <div class="list-meta">
+                  <a href>Sunnier</a>
+                  <a href>回复</a>
+                  <span>喜欢</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item mt15">
+            <div class="list-item-info clearfixed">
+              <a href class="list-img">
+                <img src="./assets/img/up.jpg" alt>
+              </a>
+              <div class="list-content">
+                <a href target="_blank">
+                  <div class="list-title">《尼采的十句话》</div>
+                  <p class="list-abstract">
+                    ——1—— 每一个不曾起舞的日子，都是对生命的辜负。
+                    ——2—— 其实人跟树是一样的，越是向往高处的阳光，它的根就越要伸向黑暗的地底。
+                    ——3—— 我感到难过，不是因为你欺骗了我，而是因为我再也不能相信你了。
+                    ——4—— 一个人知道自己为什么而活，就可以忍受任何一种生活。
+                    ——5—— 但凡不能杀死你的，最终都会使你更强大。
+                    ——6—— 谁终将声震人间，必长久深自缄默；谁终将点燃闪电，必长久如云漂泊。
+                  </p>
+                </a>
+                <div class="list-meta">
+                  <a href>Sunnier</a>
+                  <a href>回复</a>
+                  <span>喜欢</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="load-more">
+          <a href>点击加载更多</a>
+        </div>
       </el-main>
 
       <!-- 右侧边栏 -->
-      <el-aside class="right">
-        <el-menu :default-openeds="['1', '3']">
-          <el-submenu index="1">
-            <template slot="title">
-              <i class="el-icon-message"></i>导航一
-            </template>
-            <el-menu-item-group>
-              <template slot="title">分组一</template>
-              <el-menu-item index="1-1">选项1</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group title="分组2">
-              <el-menu-item index="1-3">选项3</el-menu-item>
-            </el-menu-item-group>
-            <el-submenu index="1-4">
-              <template slot="title">选项4</template>
-              <el-menu-item index="1-4-1">选项4-1</el-menu-item>
-            </el-submenu>
-          </el-submenu>
-          <el-submenu index="2">
-            <template slot="title">
-              <i class="el-icon-menu"></i>导航二
-            </template>
-            <el-menu-item-group>
-              <template slot="title">分组一</template>
-              <el-menu-item index="2-1">选项1</el-menu-item>
-              <el-menu-item index="2-2">选项2</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group title="分组2">
-              <el-menu-item index="2-3">选项3</el-menu-item>
-            </el-menu-item-group>
-            <el-submenu index="2-4">
-              <template slot="title">选项4</template>
-              <el-menu-item index="2-4-1">选项4-1</el-menu-item>
-            </el-submenu>
-          </el-submenu>
-        </el-menu>
-      </el-aside>
+      <el-aside class="right"></el-aside>
     </el-container>
 
     <!-- 回到顶部 -->
@@ -157,6 +160,10 @@
   border-radius: 20px !important;
 }
 
+/* 左侧边栏 */
+.left {
+  width: 16.66667% !important;
+}
 /* 文章列表 */
 .el-main {
   padding: 15px 5px 0 5px;
@@ -181,6 +188,10 @@
   width: 100%;
   height: auto;
 }
+/* 右侧边栏 */
+.right {
+  width: 25% !important;
+}
 /* 底部 */
 .el-footer {
   background-color: #b3c0d1;
@@ -202,5 +213,4 @@ export default {
     };
   }
 };
-
 </script>
